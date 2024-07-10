@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthCheckController {
 	
 	@GetMapping("health-check")
-	ResponseEntity<String> healthCheck(){
+	public ResponseEntity<String> healthCheck(){
 		return ResponseEntity.status(HttpStatus.OK).body("CSV Parser Microservice is working");
 	}
 }
